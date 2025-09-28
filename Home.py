@@ -1,7 +1,23 @@
+
+
 import streamlit as st
 import plotly.express as px
 import pandas as pd
 from utils import get_wb_data, INDICATORS, COUNTRIES
+
+
+st.markdown(
+    """
+    <head>
+      <meta property="og:title" content="📊 Economic Dashboard" />
+      <meta property="og:description" content="Interactive dashboard to explore GDP, Inflation, Employment, and Education data worldwide." />
+      <meta property="og:image" content="https://yourdomain.com/preview.png" />
+      <meta property="og:url" content="https://yourusername-economic-dashboard.streamlit.app" />
+      <meta name="twitter:card" content="summary_large_image" />
+    </head>
+    """,
+    unsafe_allow_html=True
+)
 
 st.set_page_config(page_title="Economic Dashboard", layout="wide")
 st.title("📊 Economic Indicators Dashboard")
