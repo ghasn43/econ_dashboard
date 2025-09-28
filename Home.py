@@ -4,7 +4,20 @@ import streamlit as st
 import plotly.express as px
 import pandas as pd
 from utils import get_wb_data, INDICATORS, COUNTRIES
-
+# 🔹 Experts Group Branding
+st.markdown(
+    """
+    <div style="text-align:center; padding:15px; margin-bottom:20px; border-bottom:2px solid #002b5c;">
+        <h1 style="margin:0; font-size:40px; color:#002b5c; font-family:Helvetica, Arial, sans-serif;">
+            Experts Group
+        </h1>
+        <p style="margin:0; font-size:18px; color:#555; font-style:italic;">
+            Innovating Economics & Education Analytics
+        </p>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
 
 st.markdown(
     """
